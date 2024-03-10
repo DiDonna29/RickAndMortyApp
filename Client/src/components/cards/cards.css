@@ -1,0 +1,13 @@
+.container-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly !important;
+  align-items: center;
+  gap: 70px;
+  margin: 0px 60px;
+  margin-bottom: 100px;
+  margin-top: 40px;
+  scroll-snap-type: y mandatory;
+}

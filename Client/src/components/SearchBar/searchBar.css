@@ -1,0 +1,83 @@
+.search {
+  display: inline-block;
+  position: relative;
+}
+
+.search .input {
+  width: 130px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #1c3042;
+}
+
+/* .search button {
+  background-color: #212121;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: 0.9s ease;
+}
+
+.search button:hover {
+  transform: scale(0.9);
+  color: rgb(255, 255, 255);
+  background-color: #1c3042;
+} */
+
+.button {
+  margin: 15px 20px !important;
+  margin-left: 10px;
+  height: auto;
+  background: transparent;
+  padding: 2px;
+  border: 1px;
+  cursor: pointer;
+}
+
+.search .button {
+  --border-right: 4px;
+  --text-stroke-color: rgb(28, 48, 66, 0.9);
+  --animation-color: #fff;
+  --fs-size: 20px;
+  letter-spacing: 6px;
+  text-align: center;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #1c3042;
+}
+
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.3s;
+  -webkit-text-stroke: 3px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}

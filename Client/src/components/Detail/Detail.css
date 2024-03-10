@@ -1,0 +1,219 @@
+/* contenedor card-detail */
+.card-detail {
+  display: flex;
+  align-content: center;
+  justify-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 150px;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+}
+
+/* contenedor izquierdo */
+.left-detail {
+  width: 500px;
+  height: 500px;
+  transition: all 0.8s;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  font-weight: 900;
+  border: 3px solid #fffa;
+  background: #99a5b3;
+  border-radius: 10%;
+  box-shadow: -10px -10px 0 -2.5px #000, -10px -10px 0 0 #fff;
+}
+
+.left-detail .image-card {
+  border-radius: 10%;
+  width: 500px;
+  height: 500px;
+}
+
+.left-detail .image-card:hover {
+  transform: translateZ(5px) rotateX(2deg) rotateY(8deg);
+}
+
+/* contenedor derecho */
+.right-detail {
+  width: 500px;
+  height: 500px;
+  transition: all 0.8s;
+  font-weight: 900;
+  border: 3px solid #fffa;
+  background: #1c3042;
+  border-radius: 10%;
+  box-shadow: 10px 10px 0 -2.5px #000, 10px 10px 0 0 #fff;
+  background: #e8e8e8;
+  background-image: url("../../images/gif7.gif");
+  background-size: 900px;
+  background-attachment: fixed;
+  background-position-y: 115px;
+  background-position-x: 70px;
+  color: #e89ac7;
+  background: transparent;
+  backdrop-filter: blur(25px);
+}
+
+.flex-container {
+  display: flex;
+  height: 500px;
+  align-items: center;
+  gap: 5px;
+  justify-items: stretch;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.right-detail p {
+  position: inherit;
+  filter: opacity(1);
+  font-weight: bolder;
+}
+
+/* Estilo para el título del detalle */
+.flex-container p {
+  color: #b94150;
+  font-weight: bolder;
+  font-size: large;
+}
+
+/* Estilo para el detalle */
+.flex-container p span {
+  color: #fff;
+  font-weight: normal;
+  font-weight: bold;
+}
+
+.right-detail h1 {
+  filter: opacity(0.9);
+  font-size: 40px;
+}
+
+/*  Loader */
+.container-loader {
+  width: 700px;
+  height: 350px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: white;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  flex-direction: column-reverse;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.subtitle {
+  font-size: 25px;
+  margin-top: 1.5em;
+  font-family: "Lato", sans-serif;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.loader {
+  width: 384px;
+  height: 384px;
+  position: relative;
+  overflow: hidden;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #fff;
+  transform: translate(-50%, 100%) scale(0);
+  animation: push 2s infinite ease-in;
+}
+.loader:after {
+  animation-delay: 1s;
+}
+@keyframes push {
+  0% {
+    transform: translate(-50%, 100%) scale(1);
+  }
+  15%,
+  25% {
+    transform: translate(-50%, 50%) scale(1);
+  }
+  50%,
+  75% {
+    transform: translate(-50%, -30%) scale(0.5);
+  }
+  80%,
+  100% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .container-loader {
+    width: 100%;
+  }
+
+  .number {
+    font-size: 100px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    padding: 0 1em;
+  }
+}
+
+.container-cargando {
+  width: 700px;
+  height: 350px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: white;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  flex-direction: column-reverse;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.cargando {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 32px 0 #fff, -32px 0 #fff;
+  position: relative;
+  animation: flash 0.5s ease-out infinite alternate;
+  margin-top: 50px;
+}
+
+@keyframes flash {
+  0% {
+    background-color: #fff2;
+    box-shadow: 32px 0 #fff2, -32px 0 #fff;
+  }
+  50% {
+    background-color: #fff;
+    box-shadow: 32px 0 #fff2, -32px 0 #fff2;
+  }
+  100% {
+    background-color: #fff2;
+    box-shadow: 32px 0 #fff, -32px 0 #fff2;
+  }
+}

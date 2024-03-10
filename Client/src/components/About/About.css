@@ -1,0 +1,97 @@
+/* contenedor card-about */
+.card-about {
+  display: flex;
+  align-content: center;
+  justify-items: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 150px;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+}
+
+.card-about h1 {
+  color: rgb(28, 48, 66, 2.5);
+  -webkit-text-stroke-width: 1.3px;
+  -webkit-text-stroke-color: #fff;
+}
+
+/* contenedor izquierdo */
+.left-about {
+  width: 500px;
+  height: 500px;
+  transition: all 0.8s;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  font-weight: 900;
+  border: 3px solid #fffa;
+  background-image: url("../../images/1703041117705.png");
+  background-size: 520px;
+  background-attachment: initial;
+  border-radius: 10%;
+  box-shadow: -10px 10px 0 -2.5px #000, -10px 10px 0 0 #fff;
+}
+
+.left-about .imagecard {
+  border-radius: 10%;
+  width: 500px;
+  height: 500px;
+}
+
+/* contenedor derecho */
+.right-about {
+  width: 500px;
+  height: 500px;
+  transition: all 0.8s;
+  font-weight: 900;
+  border: 3px solid #fffa;
+  background: #1c3042;
+  border-radius: 10%;
+  box-shadow: 10px -10px 0 -2.5px #000, 10px -10px 0 0 #fff;
+  background: #e8e8e8;
+  background-image: url("../../images/gif2.gif");
+  background-size: 900px;
+  background-attachment: initial;
+  color: #fff;
+  background: transparent;
+  backdrop-filter: blur(25px);
+}
+
+.flex-container {
+  display: flex;
+  height: 500px;
+  align-items: flex-start;
+  gap: 5px;
+  justify-items: stretch;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+}
+
+.right-about p {
+  position: inherit;
+  filter: opacity(1);
+  font-weight: bolder;
+}
+
+/* Estilo para el título del detalle */
+.flex-container p {
+  color: #b94150;
+  font-weight: bolder;
+  font-size: large;
+}
+
+/* Estilo para el detalle */
+.flex-container p span {
+  color: #fff;
+  font-weight: normal;
+  font-weight: bold;
+}
+
+.right-about h1 {
+  filter: opacity(0.9);
+  font-size: 50px;
+}

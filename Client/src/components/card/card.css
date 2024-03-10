@@ -1,0 +1,150 @@
+/*  boton */
+
+.button-card {
+  width: 250px;
+  padding: 0;
+  border: none;
+  transform: rotate(5deg);
+  transform-origin: center;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  box-shadow: 0 2px 0 #e8e8e8;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: #000c;
+}
+
+.button-card span {
+  background: #e8e8e8;
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 2px solid #212121;
+}
+
+.button-card:active {
+  transform: translateY(0px);
+  padding-bottom: 0px;
+  outline: 0;
+}
+
+.delete-button {
+  top: 10px;
+  width: 55px;
+  left: 10px;
+  transform: rotate(-11deg);
+  transform-origin: center left;
+}
+
+.button-fav {
+  bottom: 20px;
+  left: 15px;
+  transform: rotate(1deg);
+  transform-origin: center right;
+}
+
+/*  CARD  */
+
+.card {
+  width: 305px;
+  height: 305px;
+  transition: all 1.9s;
+  font-weight: 900;
+  border: 3px solid #fff2;
+  background: transparent;
+  backdrop-filter: blur(25px);
+  border-radius: 0;
+  box-shadow: 10px 10px 0 -2.5px #000, 10px 10px 0 0 #fff2;
+  object-fit: fill;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  background: #000e;
+  border: 2px solid #fff6;
+  border-radius: 10px;
+}
+
+.first-content {
+  height: 300px;
+  width: 300px;
+  transition: none 0.1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  opacity: 1;
+  border-radius: 80px;
+  font-size: 10px;
+}
+
+.card:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.9s;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-size: 0px;
+  transform: rotate(0deg) scale(0.5);
+}
+
+.card:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 1rem;
+  transform: rotate(0deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none !important;
+  color: #fff;
+  cursor: default !important;
+}
+
+.card:hover .second-content .heading {
+  margin: 10px 10px;
+}
+
+.card:hover .second-content .button-card {
+  position: fixed;
+  margin: 10px 10px;
+}
+
+.card:hover .second-content .button-card:hover {
+  background: #fff3;
+}
+
+.card:hover .second-content .button-fav:hover {
+  background: #fffc;
+}
+
+.link-name {
+  text-decoration: none !important;
+  color: #fff;
+}
+
+.card .image-card {
+  height: 300px !important;
+  width: 300px !important;
+  border-radius: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
